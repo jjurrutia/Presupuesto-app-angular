@@ -1,0 +1,15 @@
+<h4 class="egreso-titulo">EGRESOS</h4>
+
+<div class="col-10">
+    <ul class="list-group list-group-flush">
+        <li *ngFor="let egreso of egresos; index as i" class="list-group-item d-flex">
+            <div class="col-8">
+                <p> {{egreso.detalle}} </p>
+            </div>
+            <div class="col-4 d-flex justify-content-around">
+                <p> {{egreso.precio | currency}} </p>
+                <input type="button" value="Eliminar" class="btn btn-danger" (click)="eliminarEgreso(egreso.id)">
+            </div>
+        </li>
+    </ul>
+</div>

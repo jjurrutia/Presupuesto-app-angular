@@ -1,0 +1,19 @@
+<div class="row d-flex mt-4">
+    <div class="col-12 d-flex justify-content-center">
+        <div class="me-2 col-1">
+            <select class="form-select" (change)="operacion($event)">
+                <option value="ingreso">+</option>
+                <option value="egreso">-</option>
+            </select>
+        </div>
+        <div class="me-2 col-3">
+            <input type="text" name="txtDetalle" id="txtDetalle" class="form-control" [(ngModel)]="detalle">
+        </div>
+        <div class="me-2 col-1">
+            <input type="number" name="txtPrecio" id="txtPrecio" class="form-control" [(ngModel)]="precio">
+        </div>
+        <div class="me-2 col-1">
+            <input type="submit" name="txtPrecio" id="txtPrecio" class="btn btn-info" (click)="agregar()">
+        </div>
+    </div>
+</div>

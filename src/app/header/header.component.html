@@ -1,0 +1,24 @@
+<div class="row g-0">
+    <img src="..\..\assets\736145.jpg" class="img-fluid">
+    <div class="card-img-overlay d-flex flex-column align-items-center">
+        <p class="card-title">Presupuesto Disponible:</p>
+        <p class="display-5 presupuesto-total"> {{presupuestoDisponible | currency}} </p>
+
+        <div class="col-4 d-flex align-items-center mt-3 ingresos-total">
+            <div class="col-8">
+                <p class="ps-3">INGRESOS</p>
+            </div>
+            <div class="col-4">
+                {{totalIngresos | currency}}
+            </div>
+        </div>
+        <div class="col-4 d-flex align-items-center mt-2 egresos-total">
+            <div class="col-8">
+                <p class="ps-3">EGRESOS</p>
+            </div>
+            <div class="col-4">
+                {{totalEgresos | currency}}
+            </div>
+        </div>
+    </div>
+</div>

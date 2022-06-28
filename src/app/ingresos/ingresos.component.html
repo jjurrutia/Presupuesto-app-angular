@@ -1,0 +1,15 @@
+<h4 class="ingreso-titulo">INGRESOS</h4>
+
+<div class="col-10">
+    <ul class="list-group list-group-flush">
+        <li *ngFor="let ingreso of ingresos; index as i" class="list-group-item d-flex">
+            <div class="col-8">
+                <p> {{ingreso.detalle}} </p>
+            </div>
+            <div class="col-4 d-flex justify-content-around">
+                <p> {{ingreso.precio | currency}} </p>
+                <input type="button" value="Eliminar" class="btn btn-danger" (click)="eliminarIngreso(ingreso.id)">
+            </div>
+        </li>
+    </ul>
+</div>

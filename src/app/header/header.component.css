@@ -1,0 +1,23 @@
+.img-fluid{
+    object-fit: cover;
+    height: 20rem;
+    /* width: 100%; */
+}
+.card-title{
+    color: white;
+    font-size: 2rem;
+}
+.card-img-overlay{
+    height: 20rem;
+}
+.presupuesto-total{
+    color: white;
+}
+.ingresos-total{
+    background-color: #1daab8;
+    color: white;
+}
+.egresos-total{
+    background-color: #ff6047;
+    color: white;
+}
